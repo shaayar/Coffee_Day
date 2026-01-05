@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container-xl p-0">
+
+    <!-- Navbar -->
+    <header class="sticky-top bg-body border-bottom">
+
+        <nav class="navbar navbar-expand-lg px-md-5 px-3">
+            <a class="navbar-brand" href="/index.html">Coffee Day</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar" aria-labelledby="navbarOffcanvasLgLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Coffee Day</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start align-items-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                    </ul>
+
+                    <div class="pt-1 d-flex justify-content-center">
+                        <a class="btn btn-brand w-100" href="#reserve">
+                            Reserve a Spot
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+    <section class="p-0">
+        <div class="ratio ratio-16x9 hero">
+
+            <!-- Slide image -->
+            <img src="assets/images/hero.jpg" alt="" class="object-fit-cover">
+
+            <div class="position-absolute top-0 start-0  " style="background: rgba(0,0,0,0.6);">
+                <div class="row w-100 h-100 m-0">
+                    <div class="col-12 d-flex align-items-center text-center">
+
+                        <!-- arrow -->
+                        <div>
+                            <i class="bi bi-caret-left-fill fs-1" style="color: var(--bg-light);"></i>
+                        </div>
+
+                        <div class="container text-white">
+                            <h1 class="fw-bold hero-title">Fresh Coffee<br>Every Moment</h1>
+                            <p class="mt-3">Crafted with passion, served with warmth</p>
+                            <button class="btn btn-brand mt-3 text-white">Explore Menu</button>
+                        </div>
+
+                        <!-- arrow -->
+                        <div>
+                            <i class="bi bi-caret-right-fill fs-1" style="color: var(--bg-light);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-top g-4 text-center text-lg-start">
+
+                <div class="col-lg-4">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quae facere maxime fugiat
+                        veritatis tenetur? Quasi accusantium minima amet accusamus iste.
+                    </p>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quae facere maxime fugiat
+                        veritatis tenetur? Quasi accusantium minima amet accusamus iste.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 d-flex ">
+                    <img src="./assets/images/about.jpg" class="rounded w-50 mx-auto " alt="About Us">
+                </div>
+
+                <div class="col-lg-4">
+                    <h2 class="section-title">Our Vision</h2>
+                    <ul class="list-unstyled small-text">
+                        <li>
+                            <p>✔ We envision coffee as more than a beverage.</p>
+                        </li>
+                        <li>
+                            <p>✔ It is a pause between moments, a conversation starter, and a craft perfected with care.
+                            </p>
+                        </li>
+                        <li>
+                            <p>✔ Our vision is to create a space where every cup carries intention, quality, and warmth.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="py-5" id="service">
+        <div class="container">
+
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Services</h2>
+                <p class="text-muted mt-2">Crafted experiences, served with care.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="row g-4">
+
+                <!-- Service Card 1-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card rounded-5 h-100 text-center p-4 position-relative">
+
+                        <!-- Icon -->
+                        <div class="mb-3 fs-1">
+                            <i class="bi bi-cup-hot-fill" style="color: var(--brown)"></i>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="card-title mb-2">Freshly Brewed Coffee</h3>
+
+                        <!-- Base text -->
+                        <p class="text-muted mb-2">
+                            Carefully brewed for rich flavor and balance.
+                        </p>
+
+                        <!-- Hover Text -->
+                        <p class="hover-txt fs-5 fw-bold">
+                            Fresh always
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 2-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card rounded-5 h-100 text-center p-4 position-relative">
+
+                        <!-- Icon -->
+                        <div class="mb-3 fs-1">
+                            <i class="bi bi-cup-straw"></i>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="card-title mb-2">Handcrafted Beverages</h3>
+
+                        <!-- Base text -->
+                        <p class="text-muted mb-2">
+                            Made to order with balanced flavors and smooth finishes.
+                        </p>
+
+                        <!-- Hover Text -->
+                        <p class="hover-txt fs-5 fw-bold">
+                            Handmade Perfection
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 3-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card rounded-5 h-100 text-center p-4 position-relative">
+
+                        <!-- Icon -->
+                        <div class="mb-3 fs-1">
+                            <i class="bi bi-wifi" style="color: var(--brown);"></i>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="card-title mb-2">Free Wi-Fi</h3>
+
+                        <!-- Base text -->
+                        <p class="text-muted mb-2">
+                            Fast and reliable internet for work or leisure.
+                        </p>
+
+                        <!-- Hover Text -->
+                        <p class="hover-txt fs-5 fw-bold">
+                            Free Fast Wi-Fi
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 4-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card rounded-5 h-100 text-center p-4 position-relative">
+
+                        <!-- Icon -->
+                        <div class="mb-3 fs-1">
+                            <i class="bi bi-calendar-check-fill" style="color: var(--brown);"></i>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="card-title mb-2">Table Reservations</h3>
+
+                        <!-- Base text -->
+                        <p class="text-muted mb-2">
+                            Plan your visit ahead and skip the wait.
+                        </p>
+
+                        <!-- Hover Text -->
+                        <p class="hover-txt fs-5 fw-bold">
+                            Skip the wait
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 5-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card rounded-5 h-100 text-center p-4 position-relative">
+
+                        <!-- Icon -->
+                        <div class="mb-3 fs-1">
+                            <i class="bi bi-leaf-fill" style="color: var(--brown);"></i>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="card-title mb-2">Ethically Sourced Beans</h3>
+
+                        <!-- Base text -->
+                        <p class="text-muted mb-2">
+                            Responsibly sourced beans selected for quality and care.
+                        </p>
+
+                        <!-- Hover Text -->
+                        <p class="hover-txt fs-5 fw-bold">
+                            With Pure Taste
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Service Card 6-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-card rounded-5 h-100 text-center p-4 position-relative">
+
+                        <!-- Icon -->
+                        <div class="mb-3 fs-1">
+                            <i class="bi bi-leaf-fill"  style="color: var(--brown);"></i>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="card-title mb-2">Ethically Sourced Beans</h3>
+
+                        <!-- Base text -->
+                        <p class="text-muted mb-2">
+                            Responsibly sourced beans selected for quality and care.
+                        </p>
+
+                        <!-- Hover Text -->
+                        <p class="hover-txt fs-5 fw-bold">
+                            Free Fast Wi-Fi
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers/Newsletter Section -->
+    <section class="dark-section">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start px-xl-5">
+
+                <!-- Offer Text -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="section-title text-white">
+                        Brewed Just for You
+                    </h2>
+                    <p class="mt-2 text-light opacity-75">
+                        Be the first to know about new blends, seasonal offers, and cafe updates. Join our coffee circle
+                        and enjoy exclusive perks.
+                    </p>
+                </div>
+
+                <!-- Newsletter Form -->
+                <div class="col-md-6">
+
+                    <form class="d-flex flex-column flex-sm-row gap-2">
+
+                        <input type="email" class="form-control focus-ring-light" placeholder="Enter your email"
+                            required>
+                        <button type="submit" class="text-white btn btn-brand">
+                            Join the Coffee Club
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu">
+
+        <div class="container">
+
+            <h2 class="section-title text-center">
+                Our Menu
+            </h2>
+
+            <hr>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="ratio ratio-16x9 rounded-1 overflow-hidden">
+                            <img src="assets/images/hot-coffee.jpg" class="object-fit-cover" alt="Hot Coffee Mug">
+                        </div>
+
+                        <div class="card-body bg-transparent">
+                            <div class="col-12 d-flex align-items-center justify-content-between gap-3">
+                                <h5 class="card-title mt-2">Hot Coffee</h5>
+                                <p class="price-badge mb-0 text-white">Rs 130.00</p>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta neque
+                                omnis amet cupiditate dolor</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="ratio ratio-16x9 rounded-1 overflow-hidden">
+                            <img src="assets/images/hot-coffee.jpg" class="object-fit-cover" alt="Hot Coffee Mug">
+                        </div>
+
+                        <div class="card-body bg-transparent">
+                            <div class="col-12 d-flex align-items-center justify-content-between gap-3">
+                                <h5 class="card-title mt-2">Hot Coffee</h5>
+                                <p class="text-white price-badge mb-0">Rs 130.00</p>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta neque
+                                omnis amet cupiditate dolor</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="ratio ratio-16x9 rounded-1 overflow-hidden">
+                            <img src="assets/images/cold-coffee.jpg" class=" object-fit-cover" alt="Hot Coffee Mug">
+                        </div>
+                        <div class="card-body">
+                            <div class="col-12 d-flex align-items-center justify-content-between gap-3">
+                                <h5 class="card-title mt-2">Cold Coffee</h5>
+                                <p class="text-white price-badge mb-0">Rs 210.00</p>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta neque
+                                omnis amet cupiditate dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reservation -->
+    <div id="reserve">
+        <div class="container px-xl-5 py-md-5 pb-5">
+            <div class="row g-4 align-items-center">
+
+                <div class="col-md-6 text-center text-md-start">
+                    <h2 class="section-title">Reserve a Table</h2>
+                    <p class="small-text">Book your coffee moment skipping the wait ...</p>
+                </div>
+
+                <div class="col-md-6">
+                    <form class="row g-2">
+                        <input class="form-control" type="text" placeholder="Name">
+                        <input class="form-control opacity-75" type="date">
+                        <button class="btn btn-brand w-100">Book Now</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <!-- <section>
+        <div class="container bg-warning">
+            <div class="row align-items-center">
+                <div class="col-lg-12 bg-danger">
+                    hello
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- footer -->
+    <section class="dark-section">
+
+        <footer class="text-white">
+            <div class="container px-xl-5">
+                <div class="row g-4 text-center text-md-start">
+
+                    <div class="col-md-3">
+                        <h6>Contact Us</h6>
+                        <p class="small-text mb-0">info@coffee.com</p>
+                        <p class="small-text">+91 1234567891</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h6>Open Hours</h6>
+                        <!-- <p class="small-text">8AM – 10PM</p> -->
+                        <ul class="list-group list-unstyled">
+                            <li class="list-item">Monday - 8AM To 10PM</li>
+                            <li class="list-item">Tuesday - 8AM To 10PM</li>
+                            <li class="list-item">Wednesday - 8AM To 10PM</li>
+                            <li class="list-item">Thursday - 8AM To 10PM</li>
+                            <li class="list-item">Friday - 8AM To 10PM</li>
+                            <li class="list-item">Saturday - 8AM To 10PM</li>
+                            <li class="list-item">Sunday - 8AM To 1PM</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h6 class="text-center">Social Links</h6>
+                        <div class="hstack gap-3 justify-content-center">
+                            <a href="#" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-threads" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h6>Join Our Newsletter for Latest Updates</h6>
+                        <form action="" class="d-flex gap-3">
+                            <input class="form-control" type="email" placeholder="E-mail here">
+                            <input class="btn btn-brand" type="submit" placeholder="Submit">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

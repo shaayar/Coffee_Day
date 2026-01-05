@@ -1,0 +1,110 @@
+:root {
+  --brown: #3C2A21;
+  --caramel: #c89c3c;
+  --caramel-light: #c89c3caa;
+  --bg-light: #FFF8F0;
+  --dark: #1F1A17;
+  --text: #2B2B2B;
+  --muted: #7A7A7A;
+  --bs-btn-hover-bg: var(--caramel-light)
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Playfair Display', serif;
+  background: var(--bg-light);
+  color: var(--text);
+}
+
+/* Typography */
+.hero-title {
+  font-size: clamp(42px, 6vw, 64px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.small-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer {
+  font-size: 13px;
+}
+
+/* Section spacing */
+section {
+  padding: clamp(50px, 8vw, 80px) 0;
+}
+
+/* Buttons */
+.btn-brand {
+  background: var(--caramel);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  min-height: 50vh;
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("./assets/images/hero.jpg") center/cover no-repeat;
+}
+
+/* Service Cards */
+.service-card {
+  padding: 30px;
+  border: none;
+}
+
+.service-card:hover {
+  border: var(--brown) 1px solid;
+}
+
+/* Dark sections */
+.dark-section {
+  background: var(--dark);
+}
+
+/* Price Badge */
+.price-badge {
+  background: var(--caramel);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+.service-card {
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+  transition: transform .3s ease;
+}
+
+.card-body {
+  padding-top: 8px;
+}
+
+.hover-txt {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover .hover-txt {
+  opacity: 1;
+}
