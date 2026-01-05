@@ -84,10 +84,9 @@ section {
 
 /* Price Badge */
 .price-badge {
-  background: var(--caramel);
+  color: var(--caramel);
   padding: 5px 10px;
   border-radius: 20px;
-  color: black;
   font-weight: 600;
 }
 
