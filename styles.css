@@ -116,7 +116,11 @@ footer h6 {
 
 @media (max-width: 576px) {
   .carousel-inner {
-    padding-top: 3vw;
+    padding-top: 5vw;
+  }
+
+  .carousel-caption {
+    padding-top: 12vw;
   }
 }
 
